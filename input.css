@@ -1,0 +1,80 @@
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+
+@layer base {
+  h1,
+  h2 {
+    @apply font-bold rubik-mono-one-regular;
+  }
+
+  body {
+    @apply font-serif;
+  }
+
+  h3 {
+    @apply text-2xl md:text-3xl lg:text-4xl xl:text-5xl pb-5 tracking-wide font-bold protest-strike-regular;
+  }
+
+  p {
+    @apply protest-strike-regular text-sm md:text-base lg:text-lg xl:text-xl;
+  }
+}
+
+
+@layer components {
+  .protest-strike-regular {
+    font-family: "Protest Strike", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  .test{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+  .text-primary{
+    color: rgb(88, 101, 242);
+  }
+  .bg-primary{
+    background-color: rgb(88, 101, 242);
+  }
+  .bg-secondary{
+    background-color: #404eed;
+  }
+  .rubik-mono-one-regular {
+    font-family: "Rubik Mono One", monospace;
+    font-weight: 400;
+    font-style: normal;
+  }
+  .navLink {
+    @apply hover:underline font-semibold;
+  }
+
+  .btn-sm {
+    @apply bg-white py-2 px-4 text-black rounded-3xl font-medium hover:text-primary hover:shadow-lg hover:shadow-black/30 transition duration-300;
+  }
+
+  .btn {
+    @apply py-4 px-8 rounded-full text-base lg:text-lg xl:text-xl hover:shadow-lg hover:shadow-black/20 transition duration-200;
+  }
+
+  .btn-white {
+    @apply bg-white text-black hover:text-primary;
+  }
+
+  .btn-black {
+    @apply bg-black text-white;
+  }
+
+  .btn-blue {
+    @apply bg-primary text-white w-full sm:w-80;
+  }
+
+  .footerLink {
+    @apply hover:underline text-sm lg:text-base;
+  }
+}
